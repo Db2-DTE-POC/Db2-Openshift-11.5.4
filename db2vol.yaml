@@ -1,0 +1,47 @@
+{
+  "kind" : "PersistentVolume",
+  "apiVersion" : "v1",
+  "metadata":{
+    "name" : "db2-vol",
+    "labels":{
+      "name" : "db2-vol",
+      "type" : "local"
+    }
+  },
+  "spec":{
+    "capacity":{
+      "storage" : "8Gi"
+    },
+    "accessModes":[
+      "ReadWriteMany", "ReadWriteOnce",  "ReadOnlyMany"
+    ],
+    "hostPath": {
+      "path" : "/data/db2vol1"
+    }
+  }
+}
+ 
+{
+  "kind" : "PersistentVolumeClaim",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "db2pvc"
+  },
+  "spec": {
+    "accessModes": [
+      "ReadWriteMany"
+    ],
+    "resources": {
+      "requests": {
+        "storage": "3Gi"
+      }
+    },
+    "selector":{
+      "matchLabels":{
+        "name" : "db2-vol",
+        "type" : "local"
+        }
+      }
+    }
+  }
+

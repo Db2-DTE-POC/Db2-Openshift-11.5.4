@@ -1,0 +1,213 @@
+#notebook-container{
+    box-shadow: none !important;
+}
+
+#ipython_notebook img{                                                                                        
+    display:block;
+    background: url( logo.png ) no-repeat;
+    background-size: contain;
+    width: 233px;
+    height: 33px;
+    padding-left: 233px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#header-container {
+           display: flex;
+           justify-content: space-between;
+       }
+
+       span#login_widget {
+           flex-grow: 1;
+           order: 4;
+           display: flex;
+           justify-content: flex-end;
+       }
+
+       span#save_widget {
+           flex-grow: 40;
+       }
+
+.container {
+    width: 80% !important;
+}
+
+.notebook_app {
+    background: #161616!important;
+}
+
+body > #header {
+    background:  #161616;
+    color: white;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a, #kernel_indicator {
+    color: white;
+    border-bottom: 2px solid #0f62fe;
+    transition: all 0.25s;
+}
+
+.navbar-default .navbar-nav > li > a:hover, #kernel_indicator:hover {
+    border-bottom: 2px solid #0f62fe;
+    color: #0f62fe;
+}
+
+div.input_area {
+    border: none;
+    border-radius: 0;
+    background: #f7f7f7;
+    line-height: 1.5em;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+div.cell {
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    font-size: 100%;
+    color:  black;
+    transition: all 0.25s;
+    border: none;
+    position: relative;
+    top: 0;
+}
+
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border: none;
+    background: transparent;
+    box-shadow: 0 6px 18px #aaa;
+    z-index: 10;
+    top: -10px;
+}
+
+
+div#pager {
+    opacity: 0.85;
+    z-index: 9999;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #e0e0e0;
+    background-color: transparent;
+    border-bottom: 2px solid #0f62fe;
+}
+
+.dropdown-menu {
+    z-index: 999999 !important;
+    background-color: #161616;
+    color: #e0e0e0;
+    opacity: 0.95;
+}
+
+.dropdown-menu > li > a {
+    color: #e0e0e0;
+    
+
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+    color: #e0e0e0;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border: none;
+    box-shadow: none;
+}
+
+div.output_wrapper {
+    background: #eee;
+}
+
+div.cell.unselected div.output_area{
+    box-shadow: inset 0 0 25px #aaa;
+    padding: 1em 0;
+    overflow-x: auto;
+    transition: all 0.25s;
+}
+
+div.cell.selected .output_area {
+    box-shadow: inset 0 0 5px #aaa;
+    padding: 0.5em 0;
+    overflow-x: auto;
+}
+
+div.cell.selected .div.output_scroll {
+    box-shadow: none;
+}
+
+div.output_wrapper {
+    margin: 0 0 1em;
+    transition: all 0.25s;
+}
+
+div.cell.selected .output_wrapper {
+    margin: 0;
+}
+
+.dataframe {
+    background: #fff;
+    box-shadow: 0px 1px 2px #bbb;
+}
+div.output_html { font-family: "IBM Plex Sans"; }
+.dataframe thead th, .dataframe tbody td {
+    text-align: right;
+    padding: 1em;
+}
+
+.output, div.output_scroll {
+    box-shadow: none;
+}
+.text_cell_render rendered_html {
+ {
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    font-size: 200%;
+    color:  black;
+    transition: all 0.25s;
+    border: none;
+    position: relative;
+    top: 0;
+}
+
+
+.rendered_html pre code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #2a7bbd;
+    color: #444;
+    page-break-inside: avoid;
+    font-family: 'IBM Plex Sans';
+    font-size: 200%;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+h1, .h1 {
+    font-size: 33px;
+    font-family: "IBM Plex Sans";
+    font-size: 2.5em !important;
+    color: #2a7bbd;
+}
+h2, .h2 {
+    font-family: "Arial";
+    color: #2a7bbd;
+}
+h3, .h3 {
+    font-family: "IBM Plex Sans";
+    font-size: 200%;
+    color: #2a7bbd;
+}
+body, .body {
+    font-family: "IBM Plex Sans";
+    color: #2a7bbd;
+}
+
+}
